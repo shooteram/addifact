@@ -1,0 +1,27 @@
+{
+  "name": "addifact",
+  "version": "1.0.0",
+  "description": "Push files to a custom CDN",
+  "main": "lib/app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "shooteram",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/exec": "^1.0.4",
+    "@actions/tool-cache": "^1.6.1",
+    "@types/form-data": "^2.5.0",
+    "form-data": "^4.0.0",
+    "js-yaml": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31"
+  }
+}

@@ -1,0 +1,27 @@
+name: Addifact
+description: Push files to a custom CDN
+author: shooteram
+branding:
+  icon: upload-cloud
+  color: blue
+inputs:
+  project:
+    description: Project name
+    required: false
+  hostname:
+    description: The address of the CDN to use
+    required: true
+    default: cdn.shooteram.fr
+  url:
+    description: The URL on which to post files
+    required: true
+    default: /api/file/add
+  token:
+    description: Token to authenticate POST request
+    required: true
+  path:
+    description: The location of the files to upload
+    required: true
+runs:
+  using: node12
+  main: lib/run.js
